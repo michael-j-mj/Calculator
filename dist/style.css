@@ -1,0 +1,58 @@
+:root {
+  --template: rgba(247, 247, 247, 255);
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+form {
+  background-color: var(--template);
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 1rem;
+  padding: 1.5rem;
+  border: solid 1px black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 1rem;
+  justify-items: center;
+}
+
+#operation {
+  margin-top: 2rem;
+}
+input[type="radio"] {
+  margin-right: 0;
+}
+#form-input {
+  margin-top: 1rem;
+}
+#form-output {
+  width: 100%;
+  margin-left: 55%;
+  display: block;
+}
+.container {
+  display: flex;
+}
+#submit {
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: silver;
+  cursor: pointer;
+}
+#submit:hover {
+  background-color: green;
+  color: white;
+}
+#expression,#result
+{
+  margin-left:0.3rem;
+  font-weight:bold;
+}

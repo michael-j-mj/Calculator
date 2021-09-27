@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Calculator-Client</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <form id="calculater-form" action="http://localhost:8080" target="_blank">
+    <div><label for="left-Operand">Left Operand</label><br> <input type="number" step="any" id="left-Operand" required min="-10000000000" max="10000000000" name="left-Operand"><br> </div>
+    <div id="operation">
+        <input type="radio" required id="addition" name="operation" value="+">
+        <label for="addition">+ Addition</label><br>
+        <input type="radio" id="subtraction" name="operation" value="-">
+        <label for="addition">- Subtraction</label><br>
+        <input type="radio" id="multiplciation" name="operation" value="*">
+        <label for="multiplication">* Multiplication</label><br>
+        <input type="radio" id="divison" name="operation" value="/">
+        <label for="divison">/ Divison</label><br>
+        <input type="radio" id="remainder" name="operation" value="%">
+        <label for="remainder">% Remainder</label><br>
+    </div>
+    <div>
+      <label for="right-Operand">Right Operand</label><br> <input type="number" min="-10000000000" max="10000000000" step="any" id="right-Operand" required name="right-Operand"><br>
+    </div>
+
+    <div id="form-output">
+      <input type="submit" value="Calculate" id="submit" name="Calculate">
+
+      <div class="container">
+        <p>Expression:
+        <p id="expression"></p>
+        </p>
+      </div>
+      <div class="container">
+        <p>Result:
+        <p id="result"></p>
+        </p>
+      </div>
+    </div>
+    </div>
+  </form>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
